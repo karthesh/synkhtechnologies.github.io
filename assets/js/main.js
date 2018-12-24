@@ -23,6 +23,7 @@
       currentClass: 'active'
     });
 
+
     /* slicknav mobile menu active  */
     $('.mobile-menu').slicknav({
         prependTo: '.navbar-header',

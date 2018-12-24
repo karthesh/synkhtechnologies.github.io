@@ -420,7 +420,7 @@ hr {
 }
 
 .features-box .features-icon {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .features-box .features-icon i {
@@ -429,13 +429,14 @@ hr {
 }
 
 .features-box .features-content h4 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 5px;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
+
 }
 
 #clients {
@@ -476,11 +477,12 @@ hr {
 
 .services-item .icon i {
   font-size: 42px;
-  width: 42px;
+  width: 40px;
   display: block;
   height: 42px;
   color: gold;
 }
+
 
 .services-item .services-content h3 {
   margin-top: 10px;
@@ -787,17 +789,36 @@ hr {
 }
 
 #hero-area .contents {
-  padding: 170px 0px 60px;
+  padding: 150px 0px 60px;
 }
 #hero-area .contents1 {
     padding: 150px 0px 60px;
 }
+
 @media screen and (max-width: 991px ) {
     #hero-area .contents1 {
         padding: 1px 0px 60px;
     }
 }
+#feature .contents2 {
+    padding: 160px 40px 60px;
 
+}
+
+@media screen and (max-width: 991px ) {
+    #feature .contents2 {
+        padding: 1px 0px 60px;
+    }
+}
+#services .contents3 {
+    padding: 90px 40px 60px;
+}
+
+@media screen and (max-width: 991px ) {
+    #services .contents3 {
+        padding: 1px 0px 60px;
+    }
+}
 #hero-area .contents h5 {
   font-size: 50px;
 }
@@ -1310,7 +1331,7 @@ textarea {
   margin-top: 26px;
 }
 
-.subscribes {
+.team {
   background: #f8f9fb;
 }
 
@@ -1358,9 +1379,20 @@ textarea {
 
 /* Footer Area Start */
 .footer-area {
-  background:  linear-gradient(to top, #33ccff 0%, #ffff66 100%);
+  background:  linear-gradient(90deg,#3f51b5,#00bcd4);
+    animation: animate 7s linear infinite;
 }
-
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+}
 .footer-area .footer-titel {
   font-size: 20px;
   color: #000000;
