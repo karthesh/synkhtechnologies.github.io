@@ -109,11 +109,12 @@ background: gold;
 
 .btn-common:hover {
   color: #fff;
-    background: linear-gradient(to left, #ffff66 0%, #ff9900 100%);
+    background: linear-gradient(90deg,#FF8C00,#00FFFF);
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
+    animation: animate 10s linear infinite;
 }
 
 .btn-border {
@@ -439,13 +440,16 @@ hr {
 
 }
 
-/*#clients {
+#clients {
   background: #f8f9fb;
-}*/
+}
 
 .client-item-wrapper {
-  text-align: center;
-  padding: 15px;
+    /*width: 50%;
+    height: 50%;*/
+    padding: 1px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .client-item-wrapper img {
@@ -1049,9 +1053,9 @@ hr {
   z-index: 99999;
 }
 
-.testimonial {
+/*.testimonial {
   background: #34363a;
-}
+}*/
 
 .testimonial-item {
   padding: 40px;
@@ -1379,7 +1383,7 @@ textarea {
 
 /* Footer Area Start */
 .footer-area {
-  background:  linear-gradient(90deg,#3f51b5,#00bcd4);
+  background:  linear-gradient(40deg,#FFD700,#00FFFF);
     animation: animate 7s linear infinite;
 }
 @keyframes animate {

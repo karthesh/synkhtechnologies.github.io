@@ -53,7 +53,7 @@
         dots: false,
         center: true,
         margin: 15,
-        slideSpeed: 1000,
+        slideSpeed: 100,
         stopOnHover: true,
         autoPlay: true,
         responsiveClass: true,
@@ -75,10 +75,29 @@
                 items: 1
             }
         }
-      });  
-
-     /*  Slick Slider
-    ========================================================*/
+      });
+      /*/!* client Carousel
+          ========================================================*!/*/
+      $('#client').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          autoplay:true,
+          autoplayTimeout:100,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:1
+              }
+          }
+      })
+      /*  Slick Slider
+     ========================================================*/
     $('.slider-center').slick({
       centerMode: true,
       centerPadding: '60px',
@@ -133,6 +152,11 @@
           e.preventDefault();
       });
 
-  });      
+  });
+    $('.timeline').timeline({
+        forceVerticalMode: 800,
+        mode: 'horizontal',
+        visibleItems: 5
+    });
 
 }(jQuery));
