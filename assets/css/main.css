@@ -530,7 +530,8 @@ hr {
 }
 
 .top-nav-collapse .navbar-brand img {
-  width: 75%;
+  width: 85%;
+    height: 50%;
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
@@ -761,7 +762,8 @@ hr {
     top: 0;
   }
   .navbar-brand img {
-    width: 65%;
+    width: 50%;
+      height: 50%;
   }
   #mobile-menu {
     display: none;
@@ -793,13 +795,13 @@ hr {
 }
 
 #hero-area .contents {
-  padding: 150px 0px 60px;
+  padding: 140px 0px 60px;
 }
 #hero-area .contents1 {
     padding: 150px 0px 60px;
 }
 
-@media screen and (max-width: 991px ) {
+@media screen and (max-width: 753px ) {
     #hero-area .contents1 {
         padding: 1px 0px 60px;
     }
@@ -1457,3 +1459,12 @@ textarea {
 #copyright p a:hover {
   color: gold;
 }
+.clock{
+    text-align: left;
+}
+@media screen and (max-width: 900px ) {
+    .clock {
+        text-align: center;
+    }
+}
+

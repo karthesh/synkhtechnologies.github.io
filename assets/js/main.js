@@ -79,23 +79,34 @@
       /*/!* client Carousel
           ========================================================*!/*/
       $('#client').owlCarousel({
-          loop:true,
-          margin:10,
-          nav:true,
-          autoplay:true,
-          autoplayTimeout:100,
-          responsive:{
-              0:{
-                  items:1
+          loop: true,
+          nav: false,
+          dots: false,
+          center: true,
+          margin: 15,
+          slideSpeed: 100,
+          stopOnHover: true,
+          autoPlay: true,
+          responsiveClass: true,
+          responsiveRefreshRate: true,
+          responsive : {
+              0 : {
+                  items: 1
               },
-              600:{
-                  items:3
+              768 : {
+                  items: 1
               },
-              1000:{
-                  items:1
+              960 : {
+                  items: 1
+              },
+              1200 : {
+                  items: 1
+              },
+              1920 : {
+                  items: 1
               }
           }
-      })
+      });
       /*  Slick Slider
      ========================================================*/
     $('.slider-center').slick({
@@ -158,5 +169,18 @@
         mode: 'horizontal',
         visibleItems: 5
     });
+    /*Init Coutdown clock
+     ========================================================*/
+    try {
+        // check if clock is initialised
+        $('.clock-countdown').downCount({
+            date: $('.site-config').attr('data-date'),
+            offset: +10
+        });
+    }
+    catch (error) {
+        // Clock error : clock is unavailable
+        console.log("clock disabled/unavailable");
+    }
 
 }(jQuery));
