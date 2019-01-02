@@ -80,17 +80,17 @@
           ========================================================*!/*/
       $('#client').owlCarousel({
           loop: true,
-          nav: false,
-          dots: false,
           center: true,
-          margin: 15,
-          slideSpeed: 100,
-          stopOnHover: true,
-          autoPlay: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplaySpeed: 500,
           responsiveClass: true,
-          responsiveRefreshRate: true,
-          responsive : {
-              0 : {
+          responsive:{
+              0:{
+                  items: 1
+              },
+              600:{
                   items: 1
               },
               768 : {
@@ -107,6 +107,7 @@
               }
           }
       });
+
       /*  Slick Slider
      ========================================================*/
     $('.slider-center').slick({
