@@ -81,11 +81,12 @@
       $('#client').owlCarousel({
           loop: true,
           center: true,
-          dots: true,
+          dots: false,
           autoplay: true,
-          autoplayTimeout: 2000,
+          stopOnHover: true,
           autoplaySpeed: 500,
           responsiveClass: true,
+          responsiveRefreshRate: true,
           responsive:{
               0:{
                   items: 1

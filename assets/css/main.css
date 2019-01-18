@@ -392,7 +392,10 @@ hr {
 }
 
 #services {
-  background: #f8f9fb;
+    background:linear-gradient(to top, #ffff66 0%, white 50%);
+}
+#Subscribes{
+    background:linear-gradient(to bottom, #ffff66 0%, white 50%);
 }
 
 .text-wrapper {
@@ -441,31 +444,22 @@ hr {
 }
 
 #clients {
-  background: #f8f9fb;
+    background:linear-gradient(to bottom, #ffff66 0%, white 50%)
 }
 
 .client-item-wrapper {
     /*width: 50%;
     height: 50%;*/
     padding: 1px;
-    border-radius: 30px;
+    border-radius: 50px;
+    background:  linear-gradient(50deg,#FFD700,#00FFFF);
     border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .client-item-wrapper img {
-  opacity: 0.5;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  filter: gray;
   transition: all .6s ease;
   -moz-transition: all .6s ease;
   -webkit-transition: all .6s ease;
-}
-
-.client-item-wrapper:hover img {
-  opacity: 1;
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
 }
 
 /* Services Item */
@@ -480,10 +474,7 @@ hr {
 }
 
 .services-item .icon i {
-  font-size: 42px;
-  width: 40px;
-  display: block;
-  height: 42px;
+  font-size: 30px;
   color: gold;
 }
 
@@ -515,23 +506,23 @@ hr {
   z-index: 999999;
   top: 0px !important;
   min-height: 58px;
-  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  background: #fff !important;
 }
 
 .top-nav-collapse .navbar-brand {
   top: 0px;
+    margin: 8px;
 }
 
 .top-nav-collapse .navbar-brand img {
   width: 85%;
     height: 50%;
+
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
@@ -737,6 +728,7 @@ hr {
   .navbar-brand {
     position: absolute;
     padding: 0;
+      margin: 10px;
     top: 0;
   }
 
@@ -791,7 +783,10 @@ hr {
   color: #fff;
   overflow: hidden;
   position: relative;
-  background: #f8f9fb;
+    background:linear-gradient(to top, #ffff66 0%, white 50%)
+}
+#feature{
+    background:linear-gradient(to bottom, #ffff66 0%, white 50%)
 }
 
 #hero-area .contents {
@@ -813,7 +808,7 @@ hr {
 
 @media screen and (max-width: 991px ) {
     #feature .contents2 {
-        padding: 1px 0px 60px;
+        padding: 60px 0px 60px;
     }
 }
 #services .contents3 {
@@ -839,9 +834,8 @@ hr {
 
 
 .sloder-img {
-  background: #34363a;
+  background:linear-gradient(to top, #ffff66 0%, white 50%);
 }
-
 /* Team Item */
 .team-item:hover {
   box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.35);
@@ -1163,13 +1157,12 @@ hr {
   background: #CE332A;
 }
 
-.owl-pagination {
+.-pagination {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: -40px;
 }
-
 .owl-carousel .owl-dots {
   text-align: center;
   margin-top: 20px;
