@@ -519,12 +519,6 @@ hr {
     margin: 8px;
 }
 
-.top-nav-collapse .navbar-brand img {
-  width: 85%;
-    height: 50%;
-
-}
-
 .top-nav-collapse .navbar-nav .nav-link {
   color: #585b60 !important;
   margin-top: 0px !important;
